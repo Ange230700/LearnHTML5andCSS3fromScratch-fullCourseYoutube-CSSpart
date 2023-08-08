@@ -1,24 +1,29 @@
-div{
-    height: 400px;
-    color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.big-img{
-    background: url("big.jpg");
-    background-repeat: round;
-    background-size: contain;
+div {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 60px;
+  color: orange;
 }
 
-.small-img{
-    border: 1px solid red;
-    background: url("small.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+.banner {
+  background: url("/big.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.folder-img{
-    background: url("/img/folderImg.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/big.jpg") center/cover no-repeat fixed;
 }
