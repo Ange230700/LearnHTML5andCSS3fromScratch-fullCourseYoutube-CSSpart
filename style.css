@@ -2,16 +2,13 @@
   transition : change over time
   transition-property : which property to transition
   transition-duration : how long to transition
+  transition-delay : delay before transition starts
 */
 
 div {
   width: 150px;
   height: 150px;
   display: inline-block;
-}
-
-div:hover {
-  background: coral;
 }
 
 .one {
@@ -24,10 +21,10 @@ div:hover {
 
 .three {
   background-color: blue;
-  transition-property: background, border-radius;
-  transition-duration: 2s, 0.5s;
+  transition: all 4s 5s;
 }
 
 .three:hover {
   border-radius: 50%;
+  background-color: coral;
 }
