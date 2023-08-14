@@ -1,41 +1,17 @@
-div{
-  width: 60vw;
-  margin: 100px auto;
-  border: 2px solid;
-  position: relative;
+/* descendant and child combinators */
+
+.header h1 {
+  color: green;
 }
 
-img{
-  width: 100%;
-  display: block;
+.header > h1 {
+  color: purple;
 }
 
-img::before{
-  content: "";
+div h1 {
+  color: red;
 }
 
-div::before{
-  content: "";
-  display: block;
-  border: 2px solid grey;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  box-sizing: border-box;
-  top: -40px;
-  left: -40px;
-  z-index: -2;
-}
-
-div::after{
-  content: "";
-  display: block;
-  background: grey;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  box-sizing: border-box;
-  bottom: -20px;
-  right: -20px;
-  z-index: -1;
+div > h1 {
+  color: blue;
 }
