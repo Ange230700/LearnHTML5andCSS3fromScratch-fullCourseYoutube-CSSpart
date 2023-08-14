@@ -3,6 +3,12 @@
   transition-property : which property to transition
   transition-duration : how long to transition
   transition-delay : delay before transition starts
+
+  ------------------------------------------------
+
+  how the transition takes place
+  
+
 */
 
 div {
