@@ -1,24 +1,46 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+body {
+  background: yellow;
 }
 
-div {
-  float: left;
-  height: 200px;
-  width: calc(100% / 3);
+.banner {
+  background: blue;
 }
 
-.one {
-  background: lightcoral;
+h1 {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
 }
 
-.two {
-  background: lightcyan;
+@media screen and (min-width: 576px) {
+  body {
+    background: red;
+  }
+
+  .banner {
+    background: yellow;
+  }
+
+  h1 {
+    color: black;
+    font-size: 60px;
+  }
 }
 
-.three {
-  background: lightgoldenrodyellow;
+@media screen and (min-width: 768px) {
+  body {
+    background: green;
+  }
+
+  .banner {
+    background: blue;
+  }
+
+  h1 {
+    color: red;
+    font-size: 60px;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
 }
