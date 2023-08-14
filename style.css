@@ -1,18 +1,33 @@
-/* :root  root eleemnt oof the document html element, general stytles, CSS variables */
+/* 
+  transform: translate(), scale(), rotate(), skew()
+*/
 
-:root{
-  /* background: red; */
-  font-size: 150%;
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
 }
 
-h1{
-  font-size: 3rem;
+.one {
+  background-color: red;
+  /* transform: translateX(50%); */
+  /* transform: scaleX(.5); */
+  /* transform: rotate(340deg); */
+  transform: skewX(20deg);
 }
 
-.absolute{
-  font-size: 24px;
+.two {
+  background-color: green;
+  /* transform: scaleY(2); */
+  /* transform: rotateZ(135deg); */
+  transform: skewY(-20deg);
 }
 
-.responsive{
-  font-size: 1.5rem;
+.three {
+  background-color: blue;
+  /* transform: translateX(50%); */
+  /* transform: translate(20px, 303px); */
+  /* transform: scale(1.5, 1.5); */
+  /* transform: rotateX(45deg); */
+  transform: skew(40deg, -20deg);
 }
