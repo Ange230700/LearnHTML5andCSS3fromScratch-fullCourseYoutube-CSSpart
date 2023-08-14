@@ -1,5 +1,7 @@
 /* 
-  transform: translate(), scale(), rotate(), skew()
+  transition : change over time
+  transition-property : which property to transition
+  transition-duration : how long to transition
 */
 
 div {
@@ -8,26 +10,24 @@ div {
   display: inline-block;
 }
 
+div:hover {
+  background: coral;
+}
+
 .one {
   background-color: red;
-  /* transform: translateX(50%); */
-  /* transform: scaleX(.5); */
-  /* transform: rotate(340deg); */
-  transform: skewX(20deg);
 }
 
 .two {
   background-color: green;
-  /* transform: scaleY(2); */
-  /* transform: rotateZ(135deg); */
-  transform: skewY(-20deg);
 }
 
 .three {
   background-color: blue;
-  /* transform: translateX(50%); */
-  /* transform: translate(20px, 303px); */
-  /* transform: scale(1.5, 1.5); */
-  /* transform: rotateX(45deg); */
-  transform: skew(40deg, -20deg);
+  transition-property: background, border-radius;
+  transition-duration: 2s, 0.5s;
+}
+
+.three:hover {
+  border-radius: 50%;
 }
