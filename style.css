@@ -1,9 +1,17 @@
-/* ::first-letter and ::first-line */
+/* :link :visited :hover :active */
 
-p::first-line{
-  font-weight: bold;
+a:link {
+    color: aqua;
 }
 
-p::first-letter{
-  font-size: 3rem;
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: green;
 }
