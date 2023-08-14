@@ -13,13 +13,14 @@ h1 {
   text-transform: capitalize;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
   body {
     background: red;
   }
 
   .banner {
     background: yellow;
+    border-radius: 20px;
   }
 
   h1 {
@@ -28,7 +29,7 @@ h1 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     background: green;
   }
